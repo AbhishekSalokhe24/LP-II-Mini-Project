@@ -1,0 +1,103 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Doctor-Singnup.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <title>DYP Healthcare/Patient SignUp</title>
+</head>
+<body>
+
+    <header>
+        <div class="logo-img"><img src="DYP healthcare logo 2.png" alt="" srcset=""></div>
+        <div class="logo">
+            DYP Healthcare
+        </div>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Patient-login.html">Patients Login</a></li>
+                <li><a href="Doctor-login.html"  class="active">Doctor Login</a></li>
+                <li><a href="Recepstion-login.html">Receptionist Login</a></li>
+                <li><a href="">Go to Apointments</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="outer-sec">
+        <div class="box1">
+            <div class="top-heading">
+                <div class="doctor-logo"><img src="SignUp-doctor-logo 2.png" alt="" srcset=""></div>
+                <div id="h1-top-heading">Doctor Sign Up Form</div>
+            </div>
+            <div class="welcome-div">
+                <div class="wel-img"><img src="DYP healthcare CAMPUS.jpg" alt="" srcset=""></div>
+                <div class="wel-msg"><p>"Welcome to DYP Healthcare Group"</p></div>
+            </div>
+        </div>
+
+        <div class="box2">
+            <div class="form-input">
+                <form action="">
+                    <label for="">Enter e-mail:</label>
+                    <input type="text" name="" id="" placeholder="Use as username" required>
+                    <label for="">Enter Name:</label>
+                    <input type="text" name="" id="" placeholder="Full Name as on Marksheet" required>
+                    
+                    
+                    
+                    <div class="dob-div">
+                        <label for="">Select Gender:</label>
+                        <select name="" id="" required>
+                            <option value=""></option>
+                            <option value="">Male</option>
+                            <option value="">Female</option>
+                            <option value="">Other</option>
+                        </select>
+                        <label for="">Date Of Birth:</label>
+                        <input type="date" name="" id="DOB">
+                    </div>
+                    <!-- specilization & Phone nO. -->
+                    <div id="sp-No">
+                        <label for="">Enter Phone No.</label>
+                        <input type="text" id="phoneNo" name="" accept="" maxlength="10" required >
+                        <label for="">Specialization:</label>
+                        <input type="text" id="special" name="" accept="" required placeholder="e.g. Surgeon">
+                    </div>
+                    <label for="">Select Password:</label>
+                    <input type="password" name="" id="" required>
+                    <label for="">Confirm Password:</label>
+                    <input type="password" name="" id="" required>
+
+                    <div class="ch-file">
+                        <label for="">Choose Profile Photo: </label>
+                        <input type="file" id="file-img" name="img" accept="image/*" required>
+                    </div>
+                    
+
+                    <button type="submit">Register</button>
+                    <p>Already have Account ?<a href="Doctor-login.html">Login Here</a></p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Javscript for nav-bar -->
+    <script>
+        let hamburger = document.querySelector(".hamburger");
+        hamburger.onclick = function(){
+            let navBar = document.querySelector(".nav-bar");
+            navBar.classList.toggle("active");
+        }
+    </script>
+</body>
+</html>

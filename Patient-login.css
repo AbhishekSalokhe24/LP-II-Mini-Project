@@ -1,0 +1,232 @@
+*{
+    padding: 0;
+    margin: 0;
+
+}
+.body{
+    font-family: 'Poppins', sans-serif;
+}
+/* section */
+.top-box{
+    display: flex;
+    /* height: 800px;
+    width: 950px; */
+    align-items:center ;
+    justify-content: center;
+    
+}
+
+.top-div{
+    height: 500px;
+    width: 450px;
+    display: flex;
+    /* align-items: center; */
+    flex-direction: column;
+    background-color: white;
+    margin: 50px;
+    border-radius: 15px;
+    box-shadow: 2px 1px 10px;
+    
+}
+.heading{
+    display: flex;
+    align-items: center;
+    height: 150px;
+    width: 100%;
+    background-color: #161333;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.h1-top{
+    display: flex;
+}
+.h1-top h1{
+    font-size: 35px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    padding: 0px 50px 0 50px;
+}
+
+/* div */
+
+.logo-img-pat{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90px;
+    width: 90px;
+}
+.logo-img-pat img{
+    height: 75px;
+    width: 75px;
+}
+
+.form-main form{
+    display: flex;
+    flex-direction: column;
+    /* padding: 0px 20px 0px 20px; */
+    margin: 50px;
+}
+
+form input{
+    padding: 10px;
+    padding-left: 45px;
+    margin: 7px;
+    /* border-radius: 500px; */
+    border: transparent;
+    border-bottom: 2px solid #161333;
+    font-size: 20px;
+    width: 350px;
+}
+button{
+    margin: 25px;
+    padding: 15px;
+    font-size: 20px;
+    font-weight: bold;    
+    border-radius: 500px;
+    border: transparent;
+    background-color: rgb(0, 181, 222);
+    color: white;
+    cursor: pointer;  
+}
+button:hover{
+    background-color: #161333;
+}
+#email-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#email-div img{
+    height: 40px;
+    width: 40px;
+    padding: 0px;
+}
+#pass-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#pass-div img{
+    height: 40px;
+    width: 40px;
+}
+#p-bottom a{
+    text-decoration: underline;
+    color: darkblue;
+}
+#p-bottom{
+    padding: 0px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+@media only screen and (max-width:1100px){
+    #p-bottom a{
+        text-decoration: underline;
+        color: darkblue;
+    }
+    #p-bottom{
+        padding: 0px;
+        text-align: center;
+        font-weight: bold;
+        font-size: 15px;
+    }
+}
+@media only screen and (max-width:900px){
+    
+    body{
+        height: 1000px;
+    }
+    .h1-top h1{
+        font-size: 23px;
+        padding: 22px;
+        padding-left: 28px;
+    }
+    .heading{
+        height: 100px;
+    }
+    .logo-img-pat img{
+        height: 45px;
+        width: 45px;
+    }
+    .top-div{
+        height: 420px;
+        width: 300px;
+    }
+    .form-main form{
+        display: flex;
+        flex-direction: column;
+        /* padding: 0px 20px 0px 20px; */
+        margin: 50px;
+    }
+    form input{
+        padding-left: 15px;
+        margin: 7px;
+        /* border-radius: 500px; */
+        border: transparent;
+        border-bottom: 2px solid #161333;
+        font-size: 17px;
+        width: 180px;
+    }
+}
+
+@media only screen and (max-width:1320px){
+    header{
+        padding: 0 50px;
+    }
+}
+
+@media only screen and (max-width:1100px){
+   
+    .logo-img img{
+        height: 40px;
+        width: 40px;
+        padding: 2px;
+    }
+}
+@media only screen and (max-width:900px){
+    .logo-img img{
+        height: 40px;
+        width: 40px;
+        padding: 2px;
+    }
+    .hamburger{
+        display: block;
+        cursor: pointer;
+    }
+    .hamburger .line{
+        width: 30px;
+        height: 3px;
+        background-color: #fefefe;
+        margin: 6px 0;
+    }
+    /* .nav-bar{
+        display: none;
+    } */
+    .nav-bar{
+        height: 0;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        background-color: #161333;
+        transition: 0.2s;
+        overflow: hidden;
+    }
+    .nav-bar ul{
+        display: block;
+        width: fit-content;
+        margin: 80px auto 0 auto;
+        text-align: center;
+        transition: 0.5s;
+        /* changin op in JS */
+        opacity: 0;     
+    }
+    .nav-bar ul li a{
+        margin-bottom: 12px;
+    }
+}
+
